@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesse Davila</title>
+    <script src="https://use.fontawesome.com/51193808e4.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/personal_page_styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rasa|Roboto" rel="stylesheet">
+</head>
+<body>
+<main>
+    <nav class="navbar" role="navigation">
+        <div class="col-sm-6 pull-right">
+            <ul class="nav nav-pills">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="my_work.html">work</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="about-content" class="container">
+        <div class="bg-1 row">
+            <div class="col-lg-3">
+                <h1 class="about-question">Who am I?</h1>
+            </div>
+            <div class="col-lg-8">
+                <p id="personal-story">
+                    I am currently a student at Codeup in San Antonio, Texas.<br>
+                    I am learning to code because I enjoy the challenge of solving problems and because
+                    I enjoy making other people's lives a little easier or a little better through my work. <br>
+                    I've also been known to enjoy cooking by tossing things in hot pans, making music and singing
+                    loudly, and creating things that other people can enjoy.
+                </p>
+            </div>
+        </div>
+        <div class="bg-2 row">
+            <div class="col-lg-3">
+                <h1 class="about-question">What am I learning?</h1>
+            </div>
+            <div class="col-lg-8">
+                <p id="about-skills-list">
+                    HTML5, CSS, Bootstrap, JavaScript, jQuery, node.js, Java, Spring
+                </p>
+            </div>
+        </div>
+        <div class="bg-2 row" id="contact-info">
+            <div class="col-lg-8">
+                <h1 class="about-question">And here's my contact info...</h1>
+            </div>
+            <div class="col-lg-4">
+                <p class="contact-info">
+                    <strong>Email:</strong> jessedavila3@gmail.com <br>
+                    <strong>Phone:</strong> 830-660-8842 <br>
+                    <strong>Skype:</strong> ---
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-3">
+        <div class="container">
+            <div class="col-lg-2">
+                <h1 class="about-question">If you would like to contact me...</h1>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <form action="https://www.elformo.com/forms/3340416f-e237-41e9-b9b3-7effa6c20c22" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label form="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone #</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label form="message">Message</label>
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button id="formSubmit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav class="btm-info-field">
+        <div class="col-md-6">
+            <h2 class="text-center">About Me</h2>
+            <p class="about-me-info text-center">I code, I cook, I make music</p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center">Find Me</h2>
+            <ul class="socialMediaButtonSet text-center">
+                <li class="list-group-items">
+                    <a href="https://www.instagram.com/jessdavila3/"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        Instagram</a>
+                </li>
+                <li class="list-group-items">
+                    <a href="http://twitter.com/jessedavila"><i class="fa fa-twitter" aria-hidden="true"></i>
+                        Twitter</a>
+                </li>
+                <li class="list-group-items">
+                    <a href="https://github.com/jessdavila3"><i class="fa fa-github" aria-hidden="true"></i>
+                        GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</main>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+
+    var c = 0;
+
+    $("#formSubmit").click(function () {
+        $("#aboutMessage").html("Hey, thanks!");
+    });
+
+    $("#personal-story").click(function () {
+        if (c == 0) {
+            $(this).append(" I also enjoy forcing friends and family to check out my work even when they have no desire to.");
+        } else if (c == 1) {
+            $(this).append(" But it's okay, they are really supportive.");
+        } else if (c == 2) {
+            $(this).html("I love everything about coding. I enjoy the finding an approach to solve a problem and then figuring out a better one, I enjoy having an idea in your head and making it something everything else can see and experience.");
+        }
+        c++;
+    })
+</script>
+</body>
+</html>

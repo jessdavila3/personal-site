@@ -1,0 +1,152 @@
+.wrapper {
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.btm-info-field ul {
+    list-style-type: none;
+    padding:2%;
+
+}
+
+ul li {
+    padding:1%;
+}
+
+.navbar {
+    font-size: 2em;
+    background-color: #00A1B2;
+    height: 80px;
+    width: 100%;
+}
+
+.nav-pills {
+    color: white;
+}
+
+.btm-info-field {
+    height: 275px;
+    background-color: #00A1B2;
+    font-size: 1.5em;
+    font-family: 'Rasa', serif;
+}
+
+/*home page*/
+#banner-bg {
+    width: 100%;
+    height: 600px;
+}
+
+h1#banner-name {
+    font-size: 3.5em;
+    position: relative;
+    top:35%;
+}
+
+h1#banner-name>small {
+    color: whitesmoke;
+}
+
+
+/*work page*/
+#myWorkEntry {
+    font-size: 1.5em;
+    padding: 3%;
+}
+
+#myWorkEntry p {
+    margin-left: 5%;
+}
+
+#calculator-content {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid 1px lightgray;
+
+}
+
+#weather-content {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid 1px lightgray;
+}
+
+#simon-content {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid 1px lightgray;
+}
+
+
+/*about page*/
+.bg-1{
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.bg-2 {
+    height:220px;
+    border-top: 1px solid lightgray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bg-3 {
+    padding: 5%;
+    height:100%;
+    background-color: #FF6C00;
+}
+
+#personal-story {
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+.contact-info {
+    font-size: 1.7em;
+    text-align: left;
+}
+
+#about-skills-list {
+    font-size: 1.5em;
+    padding-top: 3%;
+}
+
+.about-question {
+    font-family: 'Rasa', serif;
+}
+
+#about-content p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#aboutMessage {
+    font-size: 2em;
+}
+
+#contact-info {
+  /*something here to space contact-info and contact form*/
+}
